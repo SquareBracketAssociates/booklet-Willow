@@ -1,6 +1,6 @@
 ## Introducing Willow
 
-![Pillar logo](figures/pillar.png width=30&anchor=fig)
+![Willow logo](figures/willow.png width=30&anchor=fig)
 
 
 ### What does Willow do? / How does it help me?
