@@ -1,7 +1,7 @@
 ## Your first Willow application
 
 Now you want to create your own interactive application. How do you proceed? That is what you'll learn here.
-Throughout this chapter, we'll assume the goal is to create a simple ToDo list, because we are original like that.
+Throughout this chapter, we'll assume the goal is to create a simple ToDo list, because we follow the example of the Seaside book that starts with such application.
 
 
 ### Defining an application
@@ -24,8 +24,12 @@ ToDoApplication class >> applicationTitle
 ```
 The class method `handlerName` determines the url of your application. For example `http://localhost:8080/to-do`
 
+```
 ToDoApplication class>> handlerName
  ^ 'to-do'
+```
+
+### Instance methods
 
 Let’s move now to the instance side.
 
@@ -36,7 +40,7 @@ We'll start by using the simplest option, plain HTML5, included with the core Wi
 ```
 ToDoApplication >> componentSupplierForApplication
  ^ Html5ComponentSupplier new
- ```
+```
  
 To add more component suppliers, you need to install additional projects like Willow-Bootstrap for Bootstrap 3 and Bootstrap 4, or Willow-JQueryUI for JQuery UI.
 
@@ -56,7 +60,7 @@ It defines the basic jQuery library from Seaside that your application will use.
 ```
 ToDoApplication >> jQueryLibrary
   ^ JQuery3OnlineLibrary default
-```  
+```
 
 That will be enough to continue.
 
